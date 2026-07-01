@@ -1,0 +1,13 @@
+{
+  "name": "danwalex-link",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Page link-in-bio de danwalex, servie par un Cloudflare Worker",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

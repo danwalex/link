@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "danwalex-link",
+  "main": "src/index.js",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    // Toute route inconnue renvoie la page (pas de vilain 404).
+    "not_found_handling": "single-page-application"
+  },
+  "observability": {
+    "enabled": true
+  }
+
+  // --- Domaine personnalisé ---------------------------------------------------
+  // Décommente et déploie pour brancher link.danwalex.com
+  // (le domaine danwalex.com doit déjà être sur ton compte Cloudflare).
+  //
+  // "routes": [
+  //   { "pattern": "link.danwalex.com", "custom_domain": true }
+  // ]
+}
